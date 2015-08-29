@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Accenture Hackathon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "voducvan, nguyenhoangson",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.5.2",
+    "express": "^4.13.3"
+  }
+}

@@ -9,6 +9,12 @@
 			.when("/mytrips", {
 				templateUrl: "components/myTrips/myTrips.html"
 			})
+			.when("/search", {
+				templateUrl: ""
+			})
+			.when("/booking", {
+				templateUrl: ""
+			})
 	}]);
 
 })();

@@ -16,15 +16,27 @@
 
 		// Serve all *.js files
 		.use("/assets/js", express.static(__dirname + "/client/assets/js"))
-		
+
+		// Serve controllers 
+		.use("/", express.static(__dirname + "/client/app/components/myTrips"))
+
+		// Landing page
 		.get('/', function(req, res){
 
 			// If logged-in, then server index.html file
-			// res.sendFile(__dirname + "/client/index.html");
-
-			// If not logged-in, then redirect to login.html
-			res.sendFile(__dirname + "/client/app/components/login/login.html");
+			res.sendFile(__dirname + "/client/index.html");
 
 		})
+
+		// Login page
+		.get("/login", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/login/login.html");
+		})
+
+		// My Trips
+		.get("/mytrips", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
+		})
+
 		.listen(8080);	
 })();

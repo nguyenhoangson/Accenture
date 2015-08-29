@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myTripsController">
+<head>
+	<title>My Trips</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../../assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/myTrips.css">
+
+	<!-- Angular -->
+	<script type="text/javascript" src="../../../assets/lib/angular/angular.min.js"></script>
+
+	<script type="text/javascript" src="myTripsController.js"></script>
+</head>
+
+<body>
+	<!-- Categories for trips: Upcoming and Past -->
+	<ul class="nav nav-pills" id="my-trips-categories" ng-controller="myTripsController as trips">
+		<li role="presentation" class="active" id="my-trips-upcoming"><a href="#">Upcoming</a>
+
+		</li>
+		<li role="presentation" id="my-trips-past"><a href="#">Past</a></li>
+
+		<!-- List of trips -->
+		<!-- Upcoming -->
+		<div class="my-trips-upcoming-list" ng-repeat="upcoming in trips.upcoming">
+			<h4>{{upcoming.name}}</h4>
+		</div>
+
+		<!-- Past -->
+		<div class="my-trips-past-list" ng-repeat="past in trips.upcoming">
+			<h4>{{past.name}}</h4>
+		</div>
+
+	</ul>
+</body>
+</html>
+
+
+

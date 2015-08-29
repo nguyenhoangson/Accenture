@@ -2,7 +2,7 @@
 	var login = angular.module("loginController", []);
 
 	login
-		.controler("loginControler", ["$scope", function($scope){
-			
-		}];
-})();
+		.controller("loginControler", ["$scope", function($scope){
+
+		}]);
+})();	

@@ -10,9 +10,9 @@
 
 			var upcomingTrips = [
 			{
-				name: "Event 1"
+				name: "Upcoming 1"
 			},{
-				name: "Event 2"
+				name: "Upcoming 2"
 			}];
 
 			var pastTrips = [

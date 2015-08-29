@@ -7,19 +7,27 @@
 	<link rel="stylesheet" type="text/css" href="assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
 	<!-- Angular -->
 	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<!-- Angular Route -->
+	<script type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
 
-	<!-- Scripts -->
+	<!-- Main scripts -->
 	<script type="text/javascript" src="app/app.module.js"></script>
 	<script type="text/javascript" src="app/app.routes.js"></script>
+
+	<!-- Controller scripts -->
+	<script type="text/javascript" src="app/components/login/loginController.js"></script>
+	<script type="text/javascript" src="app/components/myTrips/myTripsController.js"></script>
 
 </head>
 <body>
 	
 	<!-- Header -->
 	<div id="page-header">
+
+		<h4>Welcome to Trip Manager</h4>
 		<!-- Navigation -->
 		<ul class="nav nav-pills">
-		<li role="presentation" class="active"><a href="#">My Trips</a></li>
+		<li role="presentation" class="active"><a href="#/mytrips">My Trips</a></li>
 			<li role="presentation"><a href="#">Booking</a></li>
 			<li role="presentation"><a href="#">Searching</a></li>
 		</ul>
@@ -27,10 +35,12 @@
 
 	<!-- Main Content -->
 	<div id="page-content">
-		
+		<div ng-view></div>
 	</div>
 
 	<!-- Footer -->
-	<div id="page-footer"></div>
+	<div id="page-footer">
+		<h4>Bye bye</h4>
+	</div>
 </body>
 </html>

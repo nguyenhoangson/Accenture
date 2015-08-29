@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html ng-app="myTripsController">
-<head>
-	<title>My Trips</title>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="../../../assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
 
-	<!-- Style -->
-	<link rel="stylesheet" type="text/css" href="../../../assets/css/myTrips.css">
-
-	<!-- Angular -->
-	<script type="text/javascript" src="../../../assets/lib/angular/angular.min.js"></script>
-
-	<script type="text/javascript" src="myTripsController.js"></script>
-</head>
-
-<body>
 	<!-- Categories for trips: Upcoming and Past -->
 	<ul class="nav nav-pills" id="my-trips-categories" ng-controller="myTripsController as trips">
 		<li role="presentation" class="active" id="my-trips-upcoming"><a href="#">Upcoming</a>
@@ -29,13 +13,12 @@
 		</div>
 
 		<!-- Past -->
-		<div class="my-trips-past-list" ng-repeat="past in trips.upcoming">
+		<div class="my-trips-past-list" ng-repeat="past in trips.past">
 			<h4>{{past.name}}</h4>
 		</div>
 
 	</ul>
-</body>
-</html>
+
 
 
 

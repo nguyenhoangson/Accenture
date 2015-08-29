@@ -8,6 +8,9 @@
 
 		.use("/app",express.static(path.join(__dirname + "/client/app")))
 
+		// Serve partials
+		.use("/components", express.static(__dirname + "/client/app/components"))
+
 		// Serve lib
 		.use("/assets/lib",express.static(__dirname + "/client/assets/lib"))
 
@@ -18,7 +21,7 @@
 		.use("/assets/js", express.static(__dirname + "/client/assets/js"))
 
 		// Serve controllers 
-		.use("/", express.static(__dirname + "/client/app/components/myTrips"))
+		.use("/", express.static(__dirname + "/client/app/components"))
 
 		// Landing page
 		.get('/', function(req, res){
@@ -34,9 +37,9 @@
 		})
 
 		// My Trips
-		.get("/mytrips", function(req, res){
-			res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
-		})
+		// .get("/mytrips", function(req, res){
+		// 	res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
+		// })
 
 		.listen(8080);	
 })();

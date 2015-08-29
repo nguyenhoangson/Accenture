@@ -5,6 +5,8 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/myTrips.css">
 	<!-- Angular -->
 	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
 	<!-- Angular Route -->
@@ -18,20 +20,30 @@
 	<script type="text/javascript" src="app/components/login/loginController.js"></script>
 	<script type="text/javascript" src="app/components/myTrips/myTripsController.js"></script>
 
+
+
 </head>
 <body>
 	
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	   
+	    
+	    <div class="navbar-collapse collapse">
+	      
+	        <ul class="nav">
+	            <li><a href="#">About</a></li>
+	            <li><a href="#/mytrips">Home</a></li>
+	            <li><a href="#">Contact</a></li>
+	        </ul>
+	      </div>
+  </nav>
 	<!-- Header -->
-	<div id="page-header">
-		
-		<h4>Welcome to Trip Manager</h4>
-		<!-- Navigation -->
-		<ul class="nav nav-pills">
-			<li role="presentation" class="active"><a href="#/mytrips">My Trips</a></li>
-			<li role="presentation"><a href="#">Booking</a></li>
-			<li role="presentation"><a href="#">Searching</a></li>
-		</ul>
-	</div>
 
 	<!-- Main Content -->
 	<div id="page-content">

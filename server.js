@@ -20,6 +20,9 @@
 		// Serve all *.js files
 		.use("/assets/js", express.static(__dirname + "/client/assets/js"))
 
+		// Serve images
+		.use("/assets/image", express.static(__dirname + "/client/assets/image"))
+
 		// Serve controllers 
 		.use("/", express.static(__dirname + "/client/app/components"))
 

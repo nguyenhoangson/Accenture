@@ -47,13 +47,19 @@
   </nav>
 	<!-- Header -->
 	<div class="container">
-		<div class="row">
+
+		<!-- Search -->
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-lg-6 pull-left">
+    			<div class="input-group">
+      			<input type="text" class="form-control" placeholder="Search for..." ng-model="searchText">
+    			</div><!-- /input-group -->
+  			</div>
 		</div>
 
 
-
 		<div class="row" ng-controller="myBookingAccomodationController as trips"> 
-			<div id="hotel-list" class="col-lg-12 col-md-12 com-sm-12 col-xs-12" ng-repeat="hotel in trips.bookings">
+			<div id="hotel-list" class="col-lg-12 col-md-12 com-sm-12 col-xs-12" ng-repeat="hotel in trips.bookings | filter:searchText">
 				<div class="list-group">
 					<a href="#" class="list-group-item">
 						<div class="row">

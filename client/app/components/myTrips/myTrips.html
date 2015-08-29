@@ -1,7 +1,7 @@
 
 <!-- Categories for trips: Upcoming and Past -->
 
-<ul class="nav nav-pills" id="my-trips-categories" ng-controller="myTripsController as trips">
+<div id="my-trips-categories" ng-controller="myTripsController as trips">
 
 
 	<!-- Add trip button -->
@@ -35,10 +35,10 @@
 		<div class="col-lg-12 col-md-12 com-sm-12 col-xs-12">
 			<ul class="nav nav-pills">
 				<li role="presentation">
-					<button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false" ng-init="upcoming = true" ng-class="{active: upcoming}" ng-click="showUpcomingTrips()">Upcoming</button>
+					<button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false" ng-init="upcoming = true" ng-click="showUpcomingTrips()">Upcoming</button>
 				</li>
-				<li role="presentation" ng-class="{active: upcoming}">
-					<button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false">Past</button>
+				<li role="presentation">
+					<button type="button" class="btn btn-primary" ng-init="past = true" aria-haspopup="true" aria-expanded="false" ng-click="showPastTrips()">Past</button>
 				</li>
 			</ul>
 		</div>
@@ -70,7 +70,7 @@
 		</div>	
 
 		<!-- Past -->
-		<div ng-show="past">
+		<div ng-hide="past">
 			<div id="my-trips-past-list" class="col-lg-12 col-md-12 com-sm-12 col-xs-12" ng-repeat="past in trips.past">
 				<div class="list-group">
 					<a href="#" class="list-group-item">
@@ -95,7 +95,6 @@
 
 </div>
 
-</ul>
 
 
 

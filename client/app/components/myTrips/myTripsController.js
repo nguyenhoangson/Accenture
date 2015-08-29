@@ -44,6 +44,11 @@
 
 			$scope.showUpcomingTrips = function(){
 				$scope.upcoming = true;
+				$scope.past = true;
+			};
+
+			$scope.showPastTrips = function(){
+				$scope.upcoming = false;
 				$scope.past = false;
 			};
 		}]);

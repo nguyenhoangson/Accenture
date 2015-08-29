@@ -1,0 +1,31 @@
+{
+  "project": {
+    "projectSettingsVersion": "1.0",
+    "creationData": {
+      "type": "Import",
+      "src": "C:\\Users\\VAN00_000.VanVoDuc\\Desktop\\node\\accenture",
+      "projectGuid": "f88a48fe-6084-4b4a-b574-3d6a1462ca71",
+      "lastModifiedDate": 1440819096102,
+      "creationDate": 1440819096057
+    },
+    "projectFiles": {},
+    "projectDirectories": {},
+    "libraries": [
+      {
+        "name": "Cordova",
+        "version": "2.9.0",
+        "data": {
+          "default": true
+        }
+      },
+      {
+        "name": "intelXDK",
+        "version": "4.0.0",
+        "data": {
+          "default": true
+        }
+      }
+    ],
+    "services": []
+  }
+}

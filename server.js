@@ -34,10 +34,28 @@
 
 		})
 
+		// 
+		.get("/lasttrip.html", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/lastTrip.html");
+		})
 		// Login page
 		.get("/login", function(req, res){
 			res.sendFile(__dirname + "/client/app/components/login/login.html");
 		})
+
+		.get("/booking-accomodation.html", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation.html");
+		})
+
+		.get("/booking-accomodation-detail.html", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation-detail.html");
+		})
+
+		.get("/booking-accomodation.js", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation.js");
+		})
+
+
 
 		// My Trips
 		// .get("/mytrips", function(req, res){

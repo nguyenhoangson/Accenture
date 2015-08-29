@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Landing Page</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/myTrips.css">
+	<!-- Angular -->
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<!-- Angular Route -->
+	<script type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
+
+	<!-- Main scripts -->
+	<script type="text/javascript" src="app/app.module.js"></script>
+	<script type="text/javascript" src="app/app.routes.js"></script>
+
+	<!-- Controller scripts -->
+	<script type="text/javascript" src="app/components/login/loginController.js"></script>
+	<script type="text/javascript" src="app/components/myTrips/myTripsController.js"></script>
+
+
+
+</head>
+<body>
+	
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	     </button>
+	   	</div>
+	    
+	    <div class="navbar-collapse collapse">
+	      
+	        <ul class="nav nav-justified">
+	            <li><a href="#">About</a></li>
+	            <li><a href="#/mytrips"> Trip Name goes here</a></li>
+	            <li><a href="#">Contact</a></li>
+	        </ul>
+	     </div>
+  </nav>
+	<!-- Header -->
+	<div class="container">
+		<div class ="row">
+			<div class="col-lg-4">
+				<label> Trip location: </label> Ho Chi Minh 
+			</div>
+		</div> 
+		<div class ="row">
+			<div class="col-lg-4">
+				<label> Date: </label> 05-03-2015 
+			</div>
+		</div> 
+		<div class ="row">
+			<div class="col-lg-4">
+				<label> Overall Rating: </label>  
+			</div>
+		</div> 
+		<div class ="row">
+			<div class="col-lg-8">
+				<img src="../assets/image/Singapore_image_1.jpg" class="col-lg-8">
+			</div>
+		</div> 
+	</div>
+	<!-- Main Content -->
+	
+
+	<!-- Footer -->
+
+</body>
+</html>

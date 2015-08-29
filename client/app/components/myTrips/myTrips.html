@@ -1,12 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myTripsController">
+<head>
+	<title>My Trips</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
 
+	<link rel="stylesheet" type="text/css" href="assets/css/myTrips.css">
+	<!-- Angular -->
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<!-- Angular Route -->
+	<script type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
+
+
+	<!-- Controller scripts -->
+	<script type="text/javascript" src="app/components/myTrips/myTripsController.js"></script>
+</head>
+	<body>
+
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	     </button>
+	   	</div>
+	    
+	    <div class="navbar-collapse collapse">
+	      
+	        <ul class="nav nav-justified">
+	            <li><a href="#">About</a></li>
+	            <li><a href="#/mytrips">Home</a></li>
+	            <li><a href="#">Contact</a></li>
+	        </ul>
+	     </div>
+  </nav>
 
 <!-- Categories for trips: Upcoming and Past -->
 
-<div id="my-trips-categories" ng-controller="myTripsController as trips">
+<div class="container text-center">
+	<div id="my-trips-categories" ng-controller="myTripsController as trips">
 
 
 	<!-- Add trip button -->
-	<div>
+	<div class="row" style="margin-bottom: 20px;">
 
 		<a href="/trips.html">
 			<button type="button" class="btn btn-default" aria-haspopup="true" aria-expanded="false">Add Trip</button>		
@@ -95,8 +132,15 @@
 	</div>
 
 </div>
+</div>
 
 
+
+
+</body>
+
+
+</html>
 
 
 

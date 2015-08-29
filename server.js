@@ -70,11 +70,18 @@
 			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation.js");
 		})
 
+		.get("/mytrips", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
+		})
 
 		// Add trips
 		.post("/trips", function(req, res){
+
+			// Add data to persistence mechanism
 			console.log(req.body);
-			res.send("Hi");
+
+			// Redirect to mytrips page
+			res.redirect("/login");
 		})
 		// My Trips
 		// .get("/mytrips", function(req, res){

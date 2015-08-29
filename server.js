@@ -3,6 +3,7 @@
 	var express = require('express');
 	var path = require('path');
 	var app = express();
+	var bodyParser = require('body-parser');
 
 	app	
 
@@ -26,6 +27,12 @@
 		// Serve controllers 
 		.use("/", express.static(__dirname + "/client/app/components"))
 
+		// addTripsController.js
+		.use("/addTripsController.js", express.static(__dirname + "/client/app/components/myTrips/addTripsController.js"))
+		
+		.use(bodyParser.json())
+		.use(bodyParser.urlencoded({ extended: true }))
+
 		// Landing page
 		.get('/', function(req, res){
 
@@ -34,14 +41,22 @@
 
 		})
 
+
 		// 
 		.get("/lasttrip.html", function(req, res){
 			res.sendFile(__dirname + "/client/app/components/myTrips/lastTrip.html");
 		})
+
+		// Add trip page
+		.get("/trips.html", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/addTrips.html");
+		})
+
 		// Login page
 		.get("/login", function(req, res){
 			res.sendFile(__dirname + "/client/app/components/login/login.html");
 		})
+
 
 		.get("/booking-accomodation.html", function(req, res){
 			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation.html");
@@ -56,7 +71,11 @@
 		})
 
 
-
+		// Add trips
+		.post("/trips", function(req, res){
+			console.log(req.body);
+			res.send("Hi");
+		})
 		// My Trips
 		// .get("/mytrips", function(req, res){
 		// 	res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");

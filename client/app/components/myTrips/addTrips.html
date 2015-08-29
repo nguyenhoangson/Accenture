@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Trips</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../../assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
+
+	<!-- Angular -->
+	<script type="text/javascript" src="../../../assets/lib/angular/angular.min.js"></script>
+
+	<!-- Angular Route -->
+	<script type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
+
+	<!-- Angular-Bootstrap -->
+	<script type="text/javascript" src="assets/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+	<!-- Main scripts -->
+	<script type="text/javascript" src="app/app.module.js"></script>
+	<script type="text/javascript" src="app/app.routes.js"></script>
+
+	<!-- Controller scripts -->
+	<script type="text/javascript" src="addTripsController.js"></script>
+
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/addTrips.css">
+</head>
+<body>
+	
+	<div class="container">
+	    <div class="row">
+	        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+	            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Add new trip</legend>
+	            <form action="/trips" method="post" class="form" role="form">
+		            
+		            <div class="row">
+		                <div class="col-xs-6 col-md-6">
+		                	<span>From: </span>
+		                    <input class="form-control" name="from" placeholder="From:" type="text"
+		                        required autofocus />
+		                </div>
+
+		                <div class="col-xs-6 col-md-6">
+		                	<span>To: </span>
+		                    <input class="form-control" name="to" placeholder="To:" type="text" required />
+		                </div>
+		            </div>
+	            
+				    <div class="row" ng-controller="DatepickerDemoCtrl">
+				        <div class="col-xs-6 col-md-6">
+				            <p class="input-group">
+				              <input type="date" class="form-control" datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" date-disabled="disabled(new Date(), mode)" ng-required="true" close-text="Close" name="departureDate"/>
+				              <span class="input-group-btn">
+
+				                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+				              </span>
+				            </p>
+				        </div>
+
+				        <div class="col-xs-6 col-md-6">
+				            <p class="input-group">
+				              <input type="date" class="form-control" datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="'2020-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" name="departureDate"/>
+				              <span class="input-group-btn">
+
+				                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+				              </span>
+				            </p>
+				        </div>				        
+				    </div>
+
+		            <br />
+		            <br />
+
+	            	<button class="btn btn-lg btn-primary btn-block" type="submit">
+	                Add</button>
+	            </form>
+	        </div>
+	    </div>
+	</div>
+
+</body>
+</html>

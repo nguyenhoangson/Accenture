@@ -13,24 +13,66 @@
 				name: "Meeting new partner",
 				location: "Ho Chi Minh",
 				details: "This trip will take only 2-3 days",
-				img:"../assets/image/hcm.jpg"
-			},{
+				img:"../assets/image/image1.jpg"
+			},
+			{
 				name: "Global Conference",
 				location: "Singapore",
 				details: "7 days technical summit",
-				img:"../assets/image/Singapore_image_1.jpg"
-			}];
+				img:"../assets/image/image2.jpg"
+			},
+			{
+				name: "Global Conference",
+				location: "Singapore",
+				details: "7 days technical summit",
+				img:"../assets/image/image3.jpg"
+			},
+			{
+				name: "Agriculture Conference",
+				location: "Vietnam",
+				details: "7 days argicultural summit",
+				img:"../assets/image/image4.jpg"
+			},
+			{
+				name: "Global Conference",
+				location: "Brunei",
+				details: "7 days technical summit",
+				img:"../assets/image/image5.jpg"
+			},
+			];
 
 			var pastTrips = [
 			{
-				name: "Past 1",
-				location: "Indonesia",
-				details: "details 1"
-			},{
-				name: "Past 2",
+				name: "Hackathon",
 				location: "Vietnam",
-				details: "details 2"
-			}];
+				details: "../assets/image/image_past1.jpg"
+			},
+			{
+				name: "Agriculture Conference",
+				location: "Singapore",
+				details: "../assets/image/image_past2.jpg"
+			},
+						{
+				name: "Technology Conference",
+				location: "Germany",
+				details: "../assets/image/image_past3.jpg"
+			},
+						{
+				name: "Business Meeting",
+				location: "England",
+				details: "../assets/image/image_past4.jpg"
+			},
+						{
+				name: "Global Conference",
+				location: "Holland",
+				details: "../assets/image/image_past5.jpg"
+			},
+						{
+				name: "Aquisition Meeting",
+				location: "Brunei",
+				details: "../assets/image/image_past6.jpg"
+			},
+			];
 
 			$scope.trips.upcoming = upcomingTrips;
 			$scope.trips.past = pastTrips;

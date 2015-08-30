@@ -10,30 +10,43 @@
 
 			var hotels = [
 			{
-				name: "Hotel 1",
+				name: "Marina Bay Sand",
 				address: "39 Orchard Link",
-				img: "details 1",
+				img: "../assets/image/image1.jpg",
 				price : "50$"
 			},
 			{
-				name: "Hotel 2",
+				name: "NTU",
 				address: "40 Orchard Link",
-				img: "details 1",
+				img: "../assets/image/image2.jpg",
 				price : "55$"
 			},
 			{
-				name: "Past 1",
+				name: "NUS",
 				address: "41 Orchard Link",
-				img: "details 1",
-				price : "60$"
+				img: "../assets/image/image3.jpg",
+				price : "20$"
 			},
-
 			{
-				name: "Past 1",
+				name: "SMU",
 				address: "42 Orchard Link",
-				img: "details 1",
-				price : "65$"
-			}];
+				img: "../assets/image/image4.jpg",
+				price : "45$"
+			},
+			{
+				name: "German Hotels",
+				address: "39 Orchard Link",
+				img: "../assets/image/image5.jpg",
+				price : "70$"
+			},
+			{
+				name: "Kazahtan",
+				address: "39 Orchard Link",
+				img: "../assets/image/image6.jpg",
+				price : "90$"
+			}
+
+			];
 
 			$scope.trips.bookings = hotels;
 	

@@ -10,13 +10,15 @@
 
 			var upcomingTrips = [
 			{
-				name: "Upcoming 1",
+				name: "Meeting new partner",
 				location: "Ho Chi Minh",
-				details: "details 1"
+				details: "This trip will take only 2-3 days",
+				img:"../assets/image/hcm.jpg"
 			},{
-				name: "Upcoming 2",
+				name: "Global Conference",
 				location: "Singapore",
-				details: "details 2"
+				details: "7 days technical summit",
+				img:"../assets/image/Singapore_image_1.jpg"
 			}];
 
 			var pastTrips = [

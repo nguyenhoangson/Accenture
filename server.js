@@ -87,6 +87,9 @@
 			res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
 		})
 
+		.get("/upcomingTrip", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/upcomingTrip.html");
+		})
 		// Add trips
 		.post("/trips", function(req, res){
 

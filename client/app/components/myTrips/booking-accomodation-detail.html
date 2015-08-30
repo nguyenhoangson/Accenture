@@ -5,8 +5,9 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
-
+		
 	<link rel="stylesheet" type="text/css" href="assets/css/myTrips.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/booking-accomodation-detail.css">
 	<!-- Angular -->
 	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
 	<!-- Angular Route -->
@@ -25,7 +26,7 @@
 </head>
 <body>
 	
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-default nav-ctz" role="navigation">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 	        <span class="icon-bar"></span>
@@ -37,16 +38,19 @@
 	    <div class="navbar-collapse collapse">
 	      
 	        <ul class="nav nav-justified">
-	            <li><a href="#">About</a></li>
-	            <li><a href="#/mytrips"> Accomodation</a></li>
-	            <li><a href="#">Contact</a></li>
+	           <div class="container-fluid">
+	        		<div class="row">
+		            	<li class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-rsz text-left"><span class="glyphicon glyphicon-menu-left"></span></li>
+		            	<li class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center text-rsz">Accomodation</li>
+		            
+		            </div> 
+	        	</div>
 	        </ul>
 	     </div>
   </nav>
 	<!-- Header -->
-	<div class="container">
+	<div class="container-fluid">
 		<div class ="row text-center">
-			
 			<div class="col-lg-10">
 				<div class="text-center">
 					<img src="../assets/image/Singapore_image_1.jpg" class="col-lg-8">
@@ -54,30 +58,29 @@
 			</div>
 
 		</div> 
-		<div class ="row">
+		<div class ="row text-rsz-btn">
 			<div class="col-lg-4">
 				<label> Hotel: </label> Hotel 1 
 			</div>
 		</div> 
-		<div class ="row">
+		<div class ="row text-rsz-btn">
 			<div class="col-lg-4">
 				<label> Address: </label> 39 Orchard Link 
 			</div>
 		</div> 
-		<div class ="row">
+		<div class ="row text-rsz-btn">
 			<div class="col-lg-4">
 				<label> Description: </label> Nhu cai buoi 
 			</div>
 		</div> 
-		<div class ="row">
+		<div class ="row text-rsz-btn">
 			<div class="col-lg-4">
 				<label> Overall Rating: </label>  
 			</div>
 		</div> 
 		<div class ="row text-center">
-			<div class="col-lg-6 ">
-				<button class="btn btn-success">BOOK</button> 
-			</div>
+				<button class="btn btn-lg btn-primary btn-block text-rsz-btn">BOOK</button> 
+			
 		</div> 
 	</div>
 	<!-- Main Content -->

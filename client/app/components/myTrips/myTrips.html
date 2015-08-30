@@ -6,12 +6,6 @@
 
 	<!-- Add trip button -->
 	<div>
-
-		<a href="/trips.html">
-			<button type="button" class="btn btn-default" aria-haspopup="true" aria-expanded="false">Add Trip</button>		
-		</a>
-
-
 		<!-- Show form if add buttion is clicked -->
 		<!-- <div ng-show="showed">
 			<div class="container">
@@ -37,10 +31,14 @@
 
 	<div class="row">
 		<div class="col-lg-12 col-md-12 com-sm-12 col-xs-12">
-					<button type="button" class="btn btn-primary col-lg-6 col-md-6 col-sm-6 col-xs-6" aria-haspopup="true" aria-expanded="false" ng-init="upcoming = true" ng-click="showUpcomingTrips()">Upcoming</button>
-			
-					<button type="button" class="btn btn-primary col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-init="past = true" aria-haspopup="true" aria-expanded="false" ng-click="showPastTrips()">Past</button>
-		
+			 <div class="col-lg-12 col-md-12 com-sm-12 col-xs-12 btn-group" data-toggle="buttons">
+			 	  <label class="btn btn-primary active col-lg-6 col-md-6 col-sm-6 col-xs-6 text-rsz-btn">
+					<input type="radio" class="btn btn-primary active " aria-haspopup="true" aria-expanded="false" ng-init="upcoming = true"  ng-click="showUpcomingTrips()">Upcoming</input>
+					</label>
+					 <label class="btn btn-primary col-lg-6 col-md-6 col-sm-6 col-xs-6 text-rsz-btn">
+					<input type="radio" class="btn btn-primary" ng-init="past = true" aria-haspopup="true" aria-expanded="false" ng-click="showPastTrips()">Past</input>
+					</label>
+			</div>
 			</div>
 	</div>
 
@@ -53,7 +51,7 @@
 					<a href="#" class="list-group-item">
 						<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-left">
-								<img src="../assets/image/Singapore_image_1.jpg" class="img-thumbnail" width="200" height="200">				
+								<img src="../assets/image/Singapore_image_1.jpg" class="img-thumbnail" width="400" height="400">				
 							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left">
 								<div class="row trip-name"><strong>{{upcoming.name}}</strong></div>
@@ -76,10 +74,10 @@
 					<a href="#" class="list-group-item">
 						<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-left">
-								<img src="../assets/image/Singapore_image_1.jpg" class="img-thumbnail" width="200" height="200">				
+								<img src="../assets/image/Singapore_image_1.jpg" class="img-thumbnail"width="400" height="400">				
 							</div>
 							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-left">
-								<div class="row trip-name"><storng>{{past.name}}</strong></div>
+								<div class="row trip-name"><strong>{{past.name}}</strong></div>
 								<div class="row trip-location"><strong>{{past.location}}</strong></div>
 								<div class="row">{{past.details}}</div>
 							</div>						

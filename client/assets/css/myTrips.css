@@ -1,7 +1,52 @@
 .trip-name{
-	font-size : 200%;
+	font-size : 250%;
+
 }
 
-.trip-location{
-	font-size: 125%;
+.btn-primary{
+	background-color: rgba(255,255,255,0.3);
+	color: #72bb53;
+	border-style: solid;
+    border-color: #72bb53;
+    border-width: 5px;
+  
 }
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary{
+	background-color: #72bb53;
+	color: #fff;
+	border-style: solid;
+    border-color: #72bb53;
+     border-width: 5px;
+}
+.trip-location{
+	font-size: 150%;
+}
+.text-rsz{
+	font-size : 500%;
+	color: white;
+}
+.text-rsz-btn{
+	font-size : 300%;
+}
+.nav-ctz{
+	background-color: #72bb53;
+}
+@media(max-width:767px){
+	.container:{
+		width: 100%;
+	}
+}
+@media (min-width: 768px){
+.container {
+    width: 100%;
+}
+@media (min-width: 992px){
+.container {
+    width: 80%;
+}
+@media(min-width:1200px){
+	.container:{
+		width: 80%;
+	}
+}
+

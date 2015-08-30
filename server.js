@@ -56,6 +56,10 @@
 			res.sendFile(__dirname + "/client/app/components/myTrips/addTrips.html");
 		})
 
+		.get("/mytrips/trips.html", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/addTrips.html");
+		})
+		
 		// Login page
 		.get("/login", function(req, res){
 			res.sendFile(__dirname + "/client/app/components/login/login.html");

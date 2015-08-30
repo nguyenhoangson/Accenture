@@ -1,4 +1,4 @@
 (function(){
 
-	var app = angular.module("app", ["route", "loginController", "myTripsController","myBookingAccomodationController"]);
+	var app = angular.module("app", ["route"]);
 })();

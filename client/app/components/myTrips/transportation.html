@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="transportationController">
+<head>
+	<title>Transportation</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../../../assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
+
+	<!-- Angular -->
+	<script type="text/javascript" src="../../../assets/lib/angular/angular.min.js"></script>
+
+	<!-- Angular Route -->
+	<script type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
+
+	<!-- Angular-Bootstrap -->
+	<script type="text/javascript" src="assets/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+
+	<!-- Controller scripts -->
+	<script type="text/javascript" src="transportationController.js"></script>
+
+</head>
+<body>
+
+
+	<div class="container text-center" ng-controller="transportationController">
+
+		<div class="row">
+			<div class="col-lg-8 col-md-8 com-sm-8 col-xs-8">
+				<h2>TRANSPORTATION</h2>	
+			</div>
+		</div>
+
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-lg-8 col-md-8 com-sm-8 col-xs-8">
+					<button type="button" class="btn btn-primary col-lg-6 col-md-6 col-sm-6 col-xs-6" aria-haspopup="true" aria-expanded="false" ng-init="flight = true" ng-click="showFlight()">Flight</button>
+			
+					<button type="button" class="btn btn-primary col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-init="transport = true" aria-haspopup="true" aria-expanded="false" ng-click="showTransport()">Transport</button>
+		
+			</div>
+
+
+		</div>
+
+		<div class="row" ng-show="flight">
+
+			<div class="row">
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<b>Quatar</b>
+				</div>
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<p>Sing</p>
+					<p>17:00</p>
+				</div>
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+				</div>
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<p>LHR</p>
+					<p>08:00</p>					
+				</div>			
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<b>Quatar</b>
+				</div>
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<p>LHR</p>
+					<p>12:00</p>
+				</div>
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+				</div>
+				<div class="col-lg-2 col-md-2 com-sm-2 col-xs-2">
+					<p>Singapore</p>
+					<p>06:00</p>					
+				</div>			
+			</div>
+
+			<hr>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-4 com-sm-4 col-xs-4">
+					<b>$1890</b>
+				</div>		
+				<div class="col-lg-4 col-md-4 com-sm-4 col-xs-4">
+					<button class="btn btn-primary">Book</button>
+				</div>			
+			</div>
+		</div>
+
+		<div class="row" ng-hide="transport">
+			<h2>Transport</h2>
+		</div>
+
+
+	</div>
+</body>
+</html>

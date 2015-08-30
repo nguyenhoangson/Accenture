@@ -23,12 +23,16 @@
 
 		// Serve images
 		.use("/assets/image", express.static(__dirname + "/client/assets/image"))
-
+		.use("/mytrips/assets", express.static(__dirname + "/client/assets"))
+		.use("/mytrips/app/components/myTrips/myTripsController.js", express.static(__dirname + "/client/app/components/myTrips/myTripsController.js"))
+		
 		// Serve controllers 
 		.use("/", express.static(__dirname + "/client/app/components"))
 
 		// addTripsController.js
 		.use("/addTripsController.js", express.static(__dirname + "/client/app/components/myTrips/addTripsController.js"))
+		
+		.use("/transportationController.js", express.static(__dirname + "/client/app/components/myTrips/transportationController.js"))
 		
 		.use(bodyParser.json())
 		.use(bodyParser.urlencoded({ extended: true }))
@@ -58,6 +62,11 @@
 		})
 
 
+		// Transportation
+		.get("/transportation", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/transportation.html");
+		})
+
 		.get("/booking-accomodation.html", function(req, res){
 			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation.html");
 		})
@@ -70,15 +79,24 @@
 			res.sendFile(__dirname + "/client/app/components/myTrips/booking-accomodation.js");
 		})
 
+		.get("/mytrips", function(req, res){
+			res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
+		})
 
 		// Add trips
 		.post("/trips", function(req, res){
+
+			// Add data to persistence mechanism
 			console.log(req.body);
-			res.send("Hi");
+
+			// Redirect to mytrips page
+			res.redirect("/mytrips");
 		})
-		// My Trips
-		// .get("/mytrips", function(req, res){
-		// 	res.sendFile(__dirname + "/client/app/components/myTrips/myTrips.html");
+
+
+		// // APIs
+		// .get("/trips", function(req, res){
+
 		// })
 
 		.listen(8080);	

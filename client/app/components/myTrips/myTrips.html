@@ -1,11 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myTripsController">
+<head>
+	<title>My Trips</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/lib/js/vendor/bootstrap-css/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/myTrips.css">
+	<!-- Angular -->
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<!-- Angular Route -->
+	<script type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
+
+
+	<!-- Controller scripts -->
+	<script type="text/javascript" src="app/components/myTrips/myTripsController.js"></script>
+</head>
+	<body>
+
+	<nav class="navbar navbar-default nav-ctz" role="navigation">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	     </button>
+	   	</div>
+	    
+	    <div class="navbar-collapse collapse">
+	      
+	        <ul class="nav nav-justified">
+	            <div class="container-fluid">
+	        		<div class="row">
+		            	<li class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-rsz text-left"><span class="glyphicon glyphicon-menu-left"></span></li>
+		            	<li class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-center text-rsz">Home</li>
+		            	<a href="trips.html" class="text-rsz"><li class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></li><span class="glyphicon glyphicon-plus"></span></a>
+		            </div> 
+	        	</div>
+	     </div>
+  </nav>
 
 <!-- Categories for trips: Upcoming and Past -->
 
-<div id="my-trips-categories" ng-controller="myTripsController as trips">
+<div class="container text-center">
+	<div id="my-trips-categories" ng-controller="myTripsController as trips">
 
 
 	<!-- Add trip button -->
 	<div>
+
 		<!-- Show form if add buttion is clicked -->
 		<!-- <div ng-show="showed">
 			<div class="container">
@@ -92,8 +134,15 @@
 	</div>
 
 </div>
+</div>
 
 
+
+
+</body>
+
+
+</html>
 
 
 
